@@ -1,0 +1,50 @@
+{
+  "name": "breadcrumbs-next",
+  "version": "1.0.0",
+  "description": "A simple breadcrumbs component for navigation.",
+  "keywords": [
+    "breadcrumbs",
+    "navigation",
+    "component"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vlad0395/breadcrumbs-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vlad0395/breadcrumbs-react/issues"
+  },
+  "homepage": "https://github.com/Vlad0395/breadcrumbs-react#readme",
+
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+
+  "peerDependencies": {
+    "next": "13.4.0 || 14.0.0 || 15.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "dependencies": {
+    "zustand": "4.4.0"
+  },
+  "devDependencies": {
+    "typescript": "5.0.0"
+  }
+}
