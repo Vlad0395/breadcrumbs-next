@@ -3,16 +3,16 @@
 ---
 
 ````markdown
-# 📍 breadcrumbs-next
+# 📍 breadcrumbs-nextjs
 
-**breadcrumbs-next** is a lightweight and customizable React hook and component for implementing breadcrumbs navigation in Next.js applications. It uses `zustand` for state management, persists breadcrumbs in `sessionStorage`, and provides a responsive UI with mobile support.
+**breadcrumbs-nextjs** is a lightweight and customizable React hook and component for implementing breadcrumbs navigation in Next.js applications. It uses `zustand` for state management, persists breadcrumbs in `sessionStorage`, and provides a responsive UI with mobile support.
 
 ---
 
 ## 🚀 Installation
 
 ```bash
-npm install breadcrumbs-next
+npm install breadcrumbs-nextjs
 ```
 ````
 
@@ -33,7 +33,7 @@ npm install breadcrumbs-next
 
 ```tsx
 'use client'
-import { useBreadcrumbs } from 'breadcrumbs-next'
+import { useBreadcrumbs } from 'breadcrumbs-nextjs'
 
 export default function Page() {
   useBreadcrumbs({
@@ -56,7 +56,7 @@ export default function Page() {
 
 ```tsx
 'use client'
-import { Breadcrumbs } from 'breadcrumbs-next'
+import { Breadcrumbs } from 'breadcrumbs-nextjs'
 
 const Header = () => {
   return (
