@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import useBreadcrumbsStore from '../stores/breadcrumbsStore'
-// import { useUserStore } from '../stores/userStore'
 // import { hasPermission, Role } from '@/lib/auth'
 
 interface Breadcrumb {
@@ -9,12 +8,10 @@ interface Breadcrumb {
   path: string
   permission?: boolean
   locale?: string
-  user?: any | undefined
 }
 
 const useBreadcrumbs = (breadcrumb: Breadcrumb) => {
-
-  const { locale = 'en', user } = breadcrumb
+  const { locale = 'en' } = breadcrumb
   const {
     breadcrumbs,
     addBreadcrumb,
@@ -26,14 +23,10 @@ const useBreadcrumbs = (breadcrumb: Breadcrumb) => {
     clearBreadcrumbs,
   } = useBreadcrumbsStore()
   const pathname = usePathname()
-
   useEffect(() => {
-    if (!user) return
-    if (breadcrumb.hasOwnProperty('permission') &&
-      !breadcrumb?.permission
-    ) {
+    if (breadcrumb.hasOwnProperty('permission') && !breadcrumb?.permission)
       return
-    }
+
     const currentPath = breadcrumb.path
     const currentPathSegments = currentPath.split('/').filter(Boolean)
     const previousPathSegments =
@@ -94,7 +87,6 @@ const useBreadcrumbs = (breadcrumb: Breadcrumb) => {
     removeBreadcrumb,
     removeBreadcrumbsUpTo,
     saveBreadcrumbsToSession,
-    user,
     locale,
   ])
 }

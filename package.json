@@ -17,34 +17,45 @@
     "url": "https://github.com/Vlad0395/breadcrumbs-react/issues"
   },
   "homepage": "https://github.com/Vlad0395/breadcrumbs-react#readme",
-
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [
     "dist"
   ],
-
   "scripts": {
     "build": "tsc",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "vitest",
+    "format": "prettier --write ."
   },
-
   "peerDependencies": {
-    "next": "13.4.0 || 14.0.0 || 15.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@radix-ui/react-dropdown-menu": "2.1.15",
+    "@radix-ui/react-slot": "1.2.3",
+    "next": "14.2.18 || 15.2.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-responsive": "10.0.1"
   },
   "dependencies": {
+    "clsx": "2.1.1",
+    "lucide-react": "0.513.0",
+    "tailwind-merge": "3.3.0",
     "zustand": "4.4.0"
   },
   "devDependencies": {
-    "typescript": "5.0.0"
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.3.0",
+    "@types/react": "19.1.6",
+    "@vitest/ui": "3.2.2",
+    "jsdom": "26.1.0",
+    "prettier": "3.5.3",
+    "prettier-plugin-tailwindcss": "0.6.12",
+    "typescript": "5.0.2",
+    "vitest": "3.2.2"
   }
 }

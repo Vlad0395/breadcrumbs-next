@@ -7,17 +7,16 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb'
+} from './ui/breadcrumb'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import useBreadcrumbsStore from '@/stores/breadcrumbsStore'
+} from './ui/dropdown-menu'
+import useBreadcrumbsStore from '../stores/breadcrumbsStore'
 import Link from 'next/link'
 
-import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 
 const Breadcrumbs = () => {

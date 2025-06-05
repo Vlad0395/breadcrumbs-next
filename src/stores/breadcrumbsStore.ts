@@ -27,9 +27,8 @@ const useBreadcrumbsStore = create<BreadcrumbsStore>((set, get) => ({
   resetStore: () => set(initialState),
   addBreadcrumb: (breadcrumb) =>
     set(({ breadcrumbs }) => {
-      const breadcrumbExists = breadcrumbs.some(
-        (b) => b.path === breadcrumb.path
-      )
+      const breadcrumbExists =
+        breadcrumbs?.some((b) => b.path === breadcrumb.path) ?? false
       if (!breadcrumbExists) {
         const breadCrumbs = [...breadcrumbs, breadcrumb]
         sessionStorage.setItem('breadcrumbs', JSON.stringify(breadCrumbs))
