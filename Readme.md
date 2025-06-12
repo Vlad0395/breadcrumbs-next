@@ -1,20 +1,20 @@
-````markdown
+```markdown
 # 📍 breadcrumbs-nextjs
 
-**breadcrumbs-nextjs** is a lightweight and customizable React hook and component for implementing breadcrumbs navigation in Next.js applications. It uses `zustand` for state management, persists breadcrumbs in `sessionStorage`, and provides a responsive UI with mobile support.
+**breadcrumbs-nextjs**
 
----
+is a lightweight and customizable React hook and component for implementing breadcrumbs navigation in Next.js applications. It uses `zustand` for state management, persists breadcrumbs in `sessionStorage`, and provides a responsive UI with mobile support.
 
+```
 ## 🚀 Installation
-
 ```bash
 npm install breadcrumbs-nextjs
 ```
-````
+
 
 > ⚠️ This package has the following peer dependencies that must be installed in your project:
 >
-> - `next` ^14.2.18 or ^15.2.2
+> - `next` "^14.0.0 or ^15.0.0",
 > - `react`, `react-dom` ^18.3.1
 > - `zustand`
 > - `react-responsive`
