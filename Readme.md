@@ -1,16 +1,14 @@
-```markdown
 # 📍 breadcrumbs-nextjs
 
-**breadcrumbs-nextjs**
-
+```markdown
 is a lightweight and customizable React hook and component for implementing breadcrumbs navigation in Next.js applications. It uses `zustand` for state management, persists breadcrumbs in `sessionStorage`, and provides a responsive UI with mobile support.
-
 ```
+
 ## 🚀 Installation
+
 ```bash
 npm install breadcrumbs-nextjs
 ```
-
 
 > ⚠️ This package has the following peer dependencies that must be installed in your project:
 >
